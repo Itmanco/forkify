@@ -14,6 +14,7 @@ export default class View {
   render(data, render = true) {
     // console.log('View->render', this);
     // console.log(data);
+
     if (!data || (Array.isArray(data) && data.length === 0))
       return this.renderError();
     this._data = data;
